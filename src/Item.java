@@ -65,10 +65,6 @@ public abstract class Item {
 	return new Position(p.x(), p.y());
     }
 
-    @Override
-    public int hashCode(){
-        return 1;
-    }
 
     public void addObserver(ObservateurItem obs){
         sesObservateurs.add(obs);
