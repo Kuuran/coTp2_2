@@ -7,6 +7,6 @@ public class ObservateurRobot extends ObservateurItem {
 
     @Override
     public void alerter(Item i) {
-        System.out.println("oyuqgdgbfcigqdifcygbaoedyfgiqyhdbciqygedfiyhgfigzrohfogzsh");
+        System.out.println("Le Robot " + i.id() + " a ete modifie.");
     }
 }

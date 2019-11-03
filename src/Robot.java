@@ -36,10 +36,7 @@ public class Robot extends Item {
             throw new ErreurRobot("Robot::deplacer : Ce robot ne peut pas etre deplace.");
         }
         else{
-            super.deplace(dx, dy);
-            for(Item i: rCharge){
-                i.deplace(dx, dy);
-            }
+            deplace(dx, dy);
         }
     }
 
