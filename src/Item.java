@@ -4,6 +4,7 @@ public abstract class Item {
 
     private boolean hasChanged;
 
+    private boolean estPlace;
     private double masse;
     private int id;
     private Position p;
@@ -18,6 +19,7 @@ public abstract class Item {
         this.p = p;
         id = ++lastId;
         niveau = 0;
+        estPlace = false;
         sesObservateurs = new HashSet<>();
         hasChanged = false;
     }
@@ -63,6 +65,16 @@ public abstract class Item {
      */
     public Position position() {
 	return new Position(p.x(), p.y());
+    }
+
+    public boolean estPlace(){
+        return estPlace;
+    }
+    public void setPlace(){
+        estPlace = true;
+    }
+    public void clearPlace(){
+        estPlace = false;
     }
 
 

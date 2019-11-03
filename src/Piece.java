@@ -15,11 +15,12 @@ public class Piece {
     }
 
     public void placer(Item i) throws ErreurRobot {
-        if(items.contains(i)){
-            throw new ErreurRobot("Piece::placer : Placement impossible");
+        if(i.estPlace()){
+            throw new ErreurRobot("Piece::placer : Placement impossible l'objet est deja place");
         }
         else {
             items.add(i);
+            i.setPlace();
         }
     }
 
@@ -28,6 +29,7 @@ public class Piece {
             throw new ErreurRobot("Piece::enlever : Action impossible, l'item n'est pas dans la piece.");
         } else {
             items.remove(i);
+            i.clearPlace();
         }
     }
 }
