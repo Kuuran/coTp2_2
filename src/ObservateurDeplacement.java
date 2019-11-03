@@ -1,6 +1,7 @@
 public class ObservateurDeplacement extends ObservateurItem {
 
     public ObservateurDeplacement() {
+        super();
     }
 
     @Override
