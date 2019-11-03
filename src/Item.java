@@ -28,8 +28,6 @@ public abstract class Item {
 
     public int niveau() { return niveau; }
 
-    protected void setNiveau(int niveau){ this.niveau=niveau;}
-
     public void upNiveau(){
         niveau+=1;
         setChanged();
