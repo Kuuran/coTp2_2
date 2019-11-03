@@ -51,19 +51,27 @@ public class TesteRobot {
 
 	try {
 	    r3.charger(s3); assert false;
-	} catch(ErreurRobot e) {}
+	} catch(ErreurRobot e) {
+		System.out.println(e.getMessage());
+	}
 
 	try {
 	    rr.placer(c1); assert false;
-	} catch(ErreurRobot e) {}
+	} catch(ErreurRobot e) {
+		System.out.println(e.getMessage());
+	}
 
 	try { 
 	    r1.charger(s2); assert false;
-	} catch(ErreurRobot e) {}
+	} catch(ErreurRobot e) {
+		System.out.println(e.getMessage());
+	}
 
 	try {
 	    r2.charger(s3); assert false;
-	} catch(ErreurRobot e) {}
+	} catch(ErreurRobot e) {
+		System.out.println(e.getMessage());
+	}
 	System.out.println("\nPositions apres chargement sur r1");
 	r.listeTous();
 
